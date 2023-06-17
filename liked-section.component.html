@@ -1,0 +1,12 @@
+<h2>Liked films:</h2>
+
+<div>
+    <app-random-filmpicker></app-random-filmpicker>
+</div>
+
+<div class="content">
+    <app-film-card 
+    *ngFor="let film of likedFilms"
+    [film]="film">
+    </app-film-card>
+  </div>
